@@ -60,5 +60,6 @@ class PrototypesController < ApplicationController
     def move_to_index
       unless current_user == @prototype.user
         redirect_to root_path
+      end
     end
 end
